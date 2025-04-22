@@ -1,6 +1,7 @@
 import express from "express";
 import {dirname,join} from "path";
 import {fileURLToPath} from "url";
+const port = process.env.PORT || 4000;
 import router from "./router/index.js";
 
 const app = express();
