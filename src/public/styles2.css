@@ -1,0 +1,162 @@
+.hero {
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .hero-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        gap: 60px;
+    }
+}
+
+.text-zone {
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 15px rgba(213, 197, 197, 0.2);
+}
+
+.hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.practica {
+    color: #00BFFF;
+    font-weight: 700;
+}
+
+.actualizada {
+    color: #FFD700;
+    font-weight: 700;
+}
+
+.botones {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+
+.hero-image {
+    margin-top: 30px;
+    max-width: 350px;
+    width: 100%;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 20px;
+}
+
+.card {
+    background-color: #18181b;
+    border-radius: 10px;
+    width: calc(33% - 20px); 
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Cursor de mano al pasar sobre la tarjeta */
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #c7c6cb;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card-image-zone {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+}
+
+.card-image {
+    width: 105%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    bottom: 0; 
+}
+
+.card:hover .card-image {
+    opacity: 0.7; 
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+
+
+
+@media (min-width: 992px) {
+    .hero-image {
+        margin-top: 0;
+    }
+}
